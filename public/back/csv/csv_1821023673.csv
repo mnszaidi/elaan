@@ -1,0 +1,257 @@
+country_id,country_code,country_name,country_status,created_by,updated_by
+1,ABW,Aruba,1,Monis,Monis
+2,AFG,Afghanistan,1,Monis,Monis
+3,AGO,Angola,1,Monis,Monis
+4,AIA,Anguilla,1,Monis,Monis
+5,ALA,Aland,1,Monis,Monis
+6,ALB,Albania,1,Monis,Monis
+7,AND,Andorra,1,Monis,Monis
+8,ARE,United Arab Emirates,1,Monis,Monis
+9,ARG,Argentina,1,Monis,Monis
+10,ARM,Armenia,1,Monis,Monis
+11,ASM,American Samoa,1,Monis,Monis
+12,ATA,Antarctica,1,Monis,Monis
+13,ATF,French Southern and Antarctic Lands,1,Monis,Monis
+14,ATG,Antigua and Barbuda,1,Monis,Monis
+15,AUS,Australia,1,Monis,Monis
+16,AUT,Austria,1,Monis,Monis
+17,AZE,Azerbaijan,1,Monis,Monis
+18,BDI,Burundi,1,Monis,Monis
+19,BEL,Belgium,1,Monis,Monis
+20,BEN,Benin,1,Monis,Monis
+21,BFA,Burkina Faso,1,Monis,Monis
+22,BGD,Bangladesh,1,Monis,Monis
+23,BGR,Bulgaria,1,Monis,Monis
+24,BHR,Bahrain,1,Monis,Monis
+25,BHS,The Bahamas,1,Monis,Monis
+26,BIH,Bosnia and Herzegovina,1,Monis,Monis
+27,BLM,Saint Barthelemy,1,Monis,Monis
+28,SHN,Saint Helena,1,Monis,Monis
+29,BLR,Belarus,1,Monis,Monis
+30,BLZ,Belize,1,Monis,Monis
+31,BMU,Bermuda,1,Monis,Monis
+32,BOL,Bolivia,1,Monis,Monis
+33,BRA,Brazil,1,Monis,Monis
+34,BRB,Barbados,1,Monis,Monis
+35,BRN,Brunei,1,Monis,Monis
+36,BTN,Bhutan,1,Monis,Monis
+37,BWA,Botswana,1,Monis,Monis
+38,CAF,Central African Republic,1,Monis,Monis
+39,CAN,Canada,1,Monis,Monis
+40,CHE,Switzerland,1,Monis,Monis
+41,CHL,Chile,1,Monis,Monis
+42,CHN,China,1,Monis,Monis
+43,CIV,Ivory Coast,1,Monis,Monis
+44,CMR,Cameroon,1,Monis,Monis
+45,COD,Democratic Republic of the Congo,1,Monis,Monis
+46,COG,Republic of the Congo,1,Monis,Monis
+47,COK,Cook Islands,1,Monis,Monis
+48,COL,Colombia,1,Monis,Monis
+49,COM,Comoros,1,Monis,Monis
+50,CPV,Cabo Verde,1,Monis,Monis
+51,CRI,Costa Rica,1,Monis,Monis
+52,CUB,Cuba,1,Monis,Monis
+53,CUW,CuraÃ§ao,1,Monis,Monis
+54,CYM,Cayman Islands,1,Monis,Monis
+55,CYP,Cyprus,1,Monis,Monis
+56,CZE,Czechia,1,Monis,Monis
+57,DEU,Germany,1,Monis,Monis
+58,DJI,Djibouti,1,Monis,Monis
+59,DMA,Dominica,1,Monis,Monis
+60,DNK,Denmark,1,Monis,Monis
+61,DOM,Dominican Republic,1,Monis,Monis
+62,DZA,Algeria,1,Monis,Monis
+63,ECU,Ecuador,1,Monis,Monis
+64,EGY,Egypt,1,Monis,Monis
+65,ERI,Eritrea,1,Monis,Monis
+66,ESH,Western Sahara,1,Monis,Monis
+67,ESP,Spain,1,Monis,Monis
+68,EST,Estonia,1,Monis,Monis
+69,ETH,Ethiopia,1,Monis,Monis
+70,FIN,Finland,1,Monis,Monis
+71,FJI,Fiji,1,Monis,Monis
+72,FLK,Falkland Islands,1,Monis,Monis
+73,FRA,France,1,Monis,Monis
+74,FRO,Faroe Islands,1,Monis,Monis
+75,FSM,Federated States of Micronesia,1,Monis,Monis
+76,GAB,Gabon,1,Monis,Monis
+77,GBR,United Kingdom,1,Monis,Monis
+78,GEO,Georgia,1,Monis,Monis
+79,GGY,Guernsey,1,Monis,Monis
+80,GHA,Ghana,1,Monis,Monis
+81,GIB,Gibraltar,1,Monis,Monis
+82,GIN,Guinea,1,Monis,Monis
+83,GMB,Gambia,1,Monis,Monis
+84,GNB,Guinea-Bissau,1,Monis,Monis
+85,GNQ,Equatorial Guinea,1,Monis,Monis
+86,GRC,Greece,1,Monis,Monis
+87,GRD,Grenada,1,Monis,Monis
+88,GRL,Greenland,1,Monis,Monis
+89,GTM,Guatemala,1,Monis,Monis
+90,GUM,Guam,1,Monis,Monis
+91,GUY,Guyana,1,Monis,Monis
+92,HKG,Hong Kong S.A.R.,1,Monis,Monis
+93,HMD,Heard Island and McDonald Islands,1,Monis,Monis
+94,HND,Honduras,1,Monis,Monis
+95,HRV,Croatia,1,Monis,Monis
+96,HTI,Haiti,1,Monis,Monis
+97,HUN,Hungary,1,Monis,Monis
+98,IDN,Indonesia,1,Monis,Monis
+99,IMN,Isle of Man,1,Monis,Monis
+100,IND,India,1,Monis,Monis
+101,IOT,British Indian Ocean Territory,1,Monis,Monis
+102,IRL,Ireland,1,Monis,Monis
+103,IRN,Iran,1,Monis,Monis
+104,IRQ,Iraq,1,Monis,Monis
+105,ISL,Iceland,1,Monis,Monis
+106,ISR,Israel,1,Monis,Monis
+107,ITA,Italy,1,Monis,Monis
+108,JAM,Jamaica,1,Monis,Monis
+109,JEY,Jersey,1,Monis,Monis
+110,JOR,Jordan,1,Monis,Monis
+111,JPN,Japan,1,Monis,Monis
+112,KAZ,Kazakhstan,1,Monis,Monis
+113,KEN,Kenya,1,Monis,Monis
+114,KGZ,Kyrgyzstan,1,Monis,Monis
+115,KHM,Cambodia,1,Monis,Monis
+116,KIR,Kiribati,1,Monis,Monis
+117,KNA,Saint Kitts and Nevis,1,Monis,Monis
+118,KOR,South Korea,1,Monis,Monis
+119,UNK,Kosovo,1,Monis,Monis
+120,KWT,Kuwait,1,Monis,Monis
+121,LAO,Laos,1,Monis,Monis
+122,LBN,Lebanon,1,Monis,Monis
+123,LBR,Liberia,1,Monis,Monis
+124,LBY,Libya,1,Monis,Monis
+125,LCA,Saint Lucia,1,Monis,Monis
+126,LIE,Liechtenstein,1,Monis,Monis
+127,LKA,Sri Lanka,1,Monis,Monis
+128,LSO,Lesotho,1,Monis,Monis
+129,LTU,Lithuania,1,Monis,Monis
+130,LUX,Luxembourg,1,Monis,Monis
+131,LVA,Latvia,1,Monis,Monis
+132,MAC,Macao S.A.R,1,Monis,Monis
+133,MAF,Saint Martin,1,Monis,Monis
+134,MAR,Morocco,1,Monis,Monis
+135,MCO,Monaco,1,Monis,Monis
+136,MDA,Moldova,1,Monis,Monis
+137,MDG,Madagascar,1,Monis,Monis
+138,MDV,Maldives,1,Monis,Monis
+139,MEX,Mexico,1,Monis,Monis
+140,MHL,Marshall Islands,1,Monis,Monis
+141,MKD,Macedonia,1,Monis,Monis
+142,MLI,Mali,1,Monis,Monis
+143,MLT,Malta,1,Monis,Monis
+144,MMR,Myanmar,1,Monis,Monis
+145,MNE,Montenegro,1,Monis,Monis
+146,MNG,Mongolia,1,Monis,Monis
+147,MNP,Northern Mariana Islands,1,Monis,Monis
+148,MOZ,Mozambique,1,Monis,Monis
+149,MRT,Mauritania,1,Monis,Monis
+150,MSR,Montserrat,1,Monis,Monis
+151,MUS,Mauritius,1,Monis,Monis
+152,MWI,Malawi,1,Monis,Monis
+153,MYS,Malaysia,1,Monis,Monis
+154,NAM,Namibia,1,Monis,Monis
+155,NCL,New Caledonia,1,Monis,Monis
+156,NER,Niger,1,Monis,Monis
+157,NFK,Norfolk Island,1,Monis,Monis
+158,NGA,Nigeria,1,Monis,Monis
+159,NIC,Nicaragua,1,Monis,Monis
+160,NIU,Niue,1,Monis,Monis
+161,NLD,Netherlands,1,Monis,Monis
+162,NOR,Norway,1,Monis,Monis
+163,NPL,Nepal,1,Monis,Monis
+164,NRU,Nauru,1,Monis,Monis
+165,NZL,New Zealand,1,Monis,Monis
+166,OMN,Oman,1,Monis,Monis
+167,PAK,Pakistan,1,Monis,Monis
+168,PAN,Panama,1,Monis,Monis
+169,PCN,Pitcairn Islands,1,Monis,Monis
+170,PER,Peru,1,Monis,Monis
+171,PHL,Philippines,1,Monis,Monis
+172,PLW,Palau,1,Monis,Monis
+173,PNG,Papua New Guinea,1,Monis,Monis
+174,POL,Poland,1,Monis,Monis
+175,PRI,Puerto Rico,1,Monis,Monis
+176,PRK,North Korea,1,Monis,Monis
+177,PRT,Portugal,1,Monis,Monis
+178,PRY,Paraguay,1,Monis,Monis
+179,PSE,Palestine,1,Monis,Monis
+180,PYF,French Polynesia,1,Monis,Monis
+181,QAT,Qatar,1,Monis,Monis
+182,ROU,Romania,1,Monis,Monis
+183,RUS,Russia,1,Monis,Monis
+184,RWA,Rwanda,1,Monis,Monis
+185,SAU,Saudi Arabia,1,Monis,Monis
+186,SDN,Sudan,1,Monis,Monis
+187,SEN,Senegal,1,Monis,Monis
+188,SGP,Singapore,1,Monis,Monis
+189,SGS,South Georgia and the Islands,1,Monis,Monis
+190,SLB,Solomon Islands,1,Monis,Monis
+191,SLE,Sierra Leone,1,Monis,Monis
+192,SLV,El Salvador,1,Monis,Monis
+193,SMR,San Marino,1,Monis,Monis
+194,SOM,Somalia,1,Monis,Monis
+195,SPM,Saint Pierre and Miquelon,1,Monis,Monis
+196,SRB,Republic of Serbia,1,Monis,Monis
+197,SSD,South Sudan,1,Monis,Monis
+198,STP,Sao Tome and Principe,1,Monis,Monis
+199,SUR,Suriname,1,Monis,Monis
+200,SVK,Slovakia,1,Monis,Monis
+201,SVN,Slovenia,1,Monis,Monis
+202,SWE,Sweden,1,Monis,Monis
+203,SWZ,Swaziland,1,Monis,Monis
+204,SXM,Sint Maarten,1,Monis,Monis
+205,SYC,Seychelles,1,Monis,Monis
+206,SYR,Syria,1,Monis,Monis
+207,TCA,Turks and Caicos Islands,1,Monis,Monis
+208,TCD,Chad,1,Monis,Monis
+209,TGO,Togo,1,Monis,Monis
+210,THA,Thailand,1,Monis,Monis
+211,TJK,Tajikistan,1,Monis,Monis
+212,TKM,Turkmenistan,1,Monis,Monis
+213,TLS,East Timor,1,Monis,Monis
+214,TON,Tonga,1,Monis,Monis
+215,TTO,Trinidad and Tobago,1,Monis,Monis
+216,TUN,Tunisia,1,Monis,Monis
+217,TUR,Turkey,1,Monis,Monis
+218,TUV,Tuvalu,1,Monis,Monis
+219,TWN,Taiwan,1,Monis,Monis
+220,TZA,United Republic of Tanzania,1,Monis,Monis
+221,UGA,Uganda,1,Monis,Monis
+222,UKR,Ukraine,1,Monis,Monis
+223,UMI,United States Minor Outlying Islands,1,Monis,Monis
+224,URY,Uruguay,1,Monis,Monis
+225,USA,United States of America,1,Monis,Monis
+226,UZB,Uzbekistan,1,Monis,Monis
+227,VAT,Vatican,1,Monis,Monis
+228,VCT,Saint Vincent and the Grenadines,1,Monis,Monis
+229,VEN,Venezuela,1,Monis,Monis
+230,VGB,British Virgin Islands,1,Monis,Monis
+231,VIR,United States Virgin Islands,1,Monis,Monis
+232,VNM,Vietnam,1,Monis,Monis
+233,VUT,Vanuatu,1,Monis,Monis
+234,WLF,Wallis and Futuna,1,Monis,Monis
+235,WSM,Samoa,1,Monis,Monis
+236,YEM,Yemen,1,Monis,Monis
+237,ZAF,South Africa,1,Monis,Monis
+238,ZMB,Zambia,1,Monis,Monis
+239,ZWE,Zimbabwe,1,Monis,Monis
+240,ATC,Ashmore and Cartier Islands,1,Monis,Monis
+241,BJN,Bajo Nuevo Bank (Petrel Is.),1,Monis,Monis
+242,CLP,Clipperton Island,1,Monis,Monis
+243,CNM,Cyprus No Mans Area,1,Monis,Monis
+244,CSI,Coral Sea Islands,1,Monis,Monis
+245,CYN,Northern Cyprus,1,Monis,Monis
+246,ESB,Dhekelia Sovereign Base Area,1,Monis,Monis
+247,IOA,Indian Ocean Territories,1,Monis,Monis
+248,KAB,Baykonur Cosmodrome,1,Monis,Monis
+249,KAS,Siachen Glacier,1,Monis,Monis
+250,PGA,Spratly Islands,1,Monis,Monis
+251,SCR,Scarborough Reef,1,Monis,Monis
+252,SER,Serranilla Bank,1,Monis,Monis
+253,SOL,Somaliland,1,Monis,Monis
+254,USG,US Naval Base Guantanamo Bay,1,Monis,Monis
+255,WSB,Akrotiri Sovereign Base Area,1,Monis,Monis
+256,Beh,Behrain,1,Monis,Monis

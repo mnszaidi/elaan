@@ -1,0 +1,26 @@
+div.pagebreak{
+    page-break-inside:avoid;
+}
+div.pagebreak:nth-child(3n) {
+  page-break-after: always;
+}
+
+@media print {
+    tr.vendorListHeading {
+        background-color: #000000 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    td.tdbackground {
+        background-color: #000000 !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+@media print {
+    .vendorListHeading th {
+        color: white !important;
+    }
+}
+
+
