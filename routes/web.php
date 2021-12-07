@@ -14,37 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','FrontController@index')->name('welcome');
-Route::get('course/{id}','FrontController@show')->name('show.course');
-Route::get('success', function () { return view('success'); })->name('success');
+
 
 Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['auth']], function() {
     Route::group(['middleware' => ['verified']], function() {
 
-
-        Route::post('course/{id}','FrontController@subscribe')->name('subscribe.course');
-        Route::post('/exam/{id}','Exam\ExamController@take_exam')->name('exams.take_exam');
-        Route::get('/exam/{id}','Exam\ExamController@take_exam')->name('exams.take_exam');
-        Route::post('/exams_submt','Exam\ExamController@exams_submt')->name('exams.exams_submt');
-        Route::resource('/exams','Exam\ExamController');
-
-
         Route::group(['middleware' => ['role:User']], function() {
             
             /**************************** Route Student ****************************/
             Route::get('/home', 'HomeController@index')->name('home');
             /**************************** Route Student ****************************/
-            /**************************** Route Student ****************************/
-            Route::get('/courses_subscribed','Course\CourseController@subscribed')->name('courses.subscribed');
-            /**************************** Route Student ****************************/
         });
 
-
-        Route::group(['middleware' => ['role:Teacher']], function() {
-            /**************************** Route Teacher ****************************/
-            Route::get('teacher',       'Dashboard\TeacherDashboardController@index')->name('teacher');
-            /**************************** Route Teacher ****************************/
+        Route::group(['middleware' => ['role:Manager']], function() {
+            /**************************** Route Manager ****************************/
+            Route::get('manager',       'Dashboard\ManagerDashboardController@index')->name('manager');
+            /**************************** Route Manager ****************************/
         });
 
         Route::group(['middleware' => ['role:Admin']], function() {
@@ -118,78 +105,6 @@ Route::group(['middleware' => ['auth']], function() {
             Route::post('/currencies_check','Currency\CurrencyController@check_currencies')->name('check.currencies');
             Route::post('/currencies_get','Currency\CurrencyController@get_currencies')->name('get.currencies');
             /**************************** Route Currency ****************************/
-            /**************************** Route Course ****************************/
-            Route::resource('/courses','Course\CourseController');
-            Route::get('/courses_upload_page','Course\CourseController@upload_page')->name('courses.upload_page');
-            Route::post('/courses_csv_upload','Course\CourseController@upload_process')->name('courses.upload_process');
-            Route::get('/courses_download_csv','Course\CourseController@download_sample_csv')->name('courses.download_csv');
-            Route::get('/courses_export_csv','Course\CourseController@export_courses')->name('courses.export_csv');
-            Route::post('/courses_bulk_delete','Course\CourseController@bulk_delet')->name('courses.bulk_delet');
-            Route::get('/courses_restore/{id}','Course\CourseController@restore_single')->name('courses.restore_single');
-            Route::get('/courses_bulk_restore','Course\CourseController@restore_bulk')->name('courses.restore_bulk');
-            Route::get('/courses_deleted_show','Course\CourseController@show_deleted')->name('courses.show_deleted');
-            Route::post('/courses_permDelete/{id}','Course\CourseController@perm_Delete');
-            Route::post('/courses_bulk_permDelete','Course\CourseController@perm_bulk_delet');
-            Route::post('/courses_check','Course\CourseController@check_courses')->name('check.courses');
-            Route::post('/courses_get','Course\CourseController@get_courses')->name('get.courses');
-            /**************************** Route Course ****************************/
-            /**************************** Route Question ****************************/
-            Route::resource('/questions','Question\QuestionController');
-            Route::get('/questions_upload_page','Question\QuestionController@upload_page')->name('questions.upload_page');
-            Route::post('/questions_csv_upload','Question\QuestionController@upload_process')->name('questions.upload_process');
-            Route::get('/questions_download_csv','Question\QuestionController@download_sample_csv')->name('questions.download_csv');
-            Route::get('/questions_export_csv','Question\QuestionController@export_questions')->name('questions.export_csv');
-            Route::post('/questions_bulk_delete','Question\QuestionController@bulk_delet')->name('questions.bulk_delet');
-            Route::get('/questions_restore/{id}','Question\QuestionController@restore_single')->name('questions.restore_single');
-            Route::get('/questions_bulk_restore','Question\QuestionController@restore_bulk')->name('questions.restore_bulk');
-            Route::get('/questions_deleted_show','Question\QuestionController@show_deleted')->name('questions.show_deleted');
-            Route::post('/questions_permDelete/{id}','Question\QuestionController@perm_Delete');
-            Route::post('/questions_bulk_permDelete','Question\QuestionController@perm_bulk_delet');
-            Route::post('/questions_check','Question\QuestionController@check_questions')->name('check.questions');
-            Route::post('/questions_get','Question\QuestionController@get_questions')->name('get.questions');
-            /**************************** Route Question ****************************/
-            /**************************** Route Answer ****************************/
-            Route::resource('/answers','Answer\AnswerController');
-            Route::get('/answers_upload_page','Answer\AnswerController@upload_page')->name('answers.upload_page');
-            Route::post('/answers_csv_upload','Answer\AnswerController@upload_process')->name('answers.upload_process');
-            Route::get('/answers_download_csv','Answer\AnswerController@download_sample_csv')->name('answers.download_csv');
-            Route::get('/answers_export_csv','Answer\AnswerController@export_answers')->name('answers.export_csv');
-            Route::post('/answers_bulk_delete','Answer\AnswerController@bulk_delet')->name('answers.bulk_delet');
-            Route::get('/answers_restore/{id}','Answer\AnswerController@restore_single')->name('answers.restore_single');
-            Route::get('/answers_bulk_restore','Answer\AnswerController@restore_bulk')->name('answers.restore_bulk');
-            Route::get('/answers_deleted_show','Answer\AnswerController@show_deleted')->name('answers.show_deleted');
-            Route::post('/answers_permDelete/{id}','Answer\AnswerController@perm_Delete');
-            Route::post('/answers_bulk_permDelete','Answer\AnswerController@perm_bulk_delet');
-            Route::post('/answers_check','Answer\AnswerController@check_answers')->name('check.answers');
-            Route::post('/answers_get','Answer\AnswerController@get_answers')->name('get.answers');
-            /**************************** Route Answer ****************************/
-            /**************************** Route Assignment ****************************/
-            Route::resource('/assignments','Assignment\AssignmentController');
-            Route::get('/assignments_upload_page','Assignment\AssignmentController@upload_page')->name('assignments.upload_page');
-            Route::post('/assignments_csv_upload','Assignment\AssignmentController@upload_process')->name('assignments.upload_process');
-            Route::get('/assignments_download_csv','Assignment\AssignmentController@download_sample_csv')->name('assignments.download_csv');
-            Route::get('/assignments_export_csv','Assignment\AssignmentController@export_assignments')->name('assignments.export_csv');
-            Route::post('/assignments_bulk_delete','Assignment\AssignmentController@bulk_delet')->name('assignments.bulk_delet');
-            Route::get('/assignments_restore/{id}','Assignment\AssignmentController@restore_single')->name('assignments.restore_single');
-            Route::get('/assignments_bulk_restore','Assignment\AssignmentController@restore_bulk')->name('assignments.restore_bulk');
-            Route::get('/assignments_deleted_show','Assignment\AssignmentController@show_deleted')->name('assignments.show_deleted');
-            Route::post('/assignments_permDelete/{id}','Assignment\AssignmentController@perm_Delete');
-            Route::post('/assignments_bulk_permDelete','Assignment\AssignmentController@perm_bulk_delet');
-            Route::post('/assignments_check','Assignment\AssignmentController@check_assignments')->name('check.assignments');
-            Route::post('/assignments_get','Assignment\AssignmentController@get_assignments')->name('get.assignments');
-            /**************************** Route Assignment ****************************/
-            /**************************** Route Exam ****************************/
-            Route::get('/exams_download_csv','Exam\ExamController@download_sample_csv')->name('exams.download_csv');
-            Route::get('/exams_export_csv','Exam\ExamController@export_exams')->name('exams.export_csv');
-            Route::post('/exams_bulk_delete','Exam\ExamController@bulk_delet')->name('exams.bulk_delet');
-            Route::get('/exams_restore/{id}','Exam\ExamController@restore_single')->name('exams.restore_single');
-            Route::get('/exams_bulk_restore','Exam\ExamController@restore_bulk')->name('exams.restore_bulk');
-            Route::get('/exams_deleted_show','Exam\ExamController@show_deleted')->name('exams.show_deleted');
-            Route::post('/exams_permDelete/{id}','Exam\ExamController@perm_Delete');
-            Route::post('/exams_bulk_permDelete','Exam\ExamController@perm_bulk_delet');
-            Route::post('/exams_check','Exam\ExamController@check_exams')->name('check.exams');
-            Route::post('/exams_get','Exam\ExamController@get_exams')->name('get.exams');
-            /**************************** Route Exam ****************************/
 
         });
 
