@@ -34,6 +34,7 @@
     <link href="{{ asset('front/css/swiper.min.css') }}" rel="stylesheet"/>
     <!--== Main Style CSS ==-->
     <link href="{{ asset('front/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('front/css/custom.css') }}" rel="stylesheet" />
 
 </head>
 
@@ -60,7 +61,7 @@
       <!--== End Header Wrapper ==-->
       <main class="main-content">
       @yield('content')
-      
+
       </main>
       <!--== Start Footer Area Wrapper ==-->
       @include('layouts/front/footer')

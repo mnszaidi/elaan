@@ -14,12 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','FrontController@index')->name('welcome');
+Route::get('about','FrontController@about')->name('about');
+Route::get('causes','FrontController@causes')->name('causes');
+Route::get('blogs','FrontController@blogs')->name('blogs');
+Route::get('faqs','FrontController@faqs')->name('faqs');
+Route::get('sponsers','FrontController@sponsers')->name('sponsers');
+Route::get('contact','FrontController@contact')->name('contact');
+
 
 
 Auth::routes(['verify' => true]);
 
 Route::group(['middleware' => ['auth']], function() {
     Route::group(['middleware' => ['verified']], function() {
+
+        /**************************** Route Donate ****************************/
+        Route::get('donate','FrontController@donate')->name('donate');
+        /**************************** Route Donate ****************************/
 
         Route::group(['middleware' => ['role:User']], function() {
             
