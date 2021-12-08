@@ -19,6 +19,7 @@ Route::get('causes','FrontController@causes')->name('causes');
 Route::get('blogs','FrontController@blogs')->name('blogs');
 Route::get('faqs','FrontController@faqs')->name('faqs');
 Route::get('sponsers','FrontController@sponsers')->name('sponsers');
+Route::get('developer','FrontController@developer')->name('developer');
 Route::get('contact','FrontController@contact')->name('contact');
 
 

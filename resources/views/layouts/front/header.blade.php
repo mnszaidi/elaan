@@ -85,7 +85,7 @@
                     <li><a href="{{ route('sponsers')}}">Sponsers</a></li>
                   </ul>
                 </li>
-                <li><a href="{{ route('about')}}">Developers</a></li>
+                <li><a href="{{ route('developer')}}">Developers</a></li>
                 <li><a href="{{ route('contact')}}">Contact Us</a></li>
               </ul>
             </div>
