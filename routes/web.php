@@ -33,22 +33,52 @@ Route::group(['middleware' => ['auth']], function() {
         Route::get('donate','FrontController@donate')->name('donate');
         /**************************** Route Donate ****************************/
 
+        //////////// Routs For User ////////////
         Route::group(['middleware' => ['role:User']], function() {
             
-            /**************************** Route Student ****************************/
+            /**************************** Route User ****************************/
             Route::get('/home', 'HomeController@index')->name('home');
-            /**************************** Route Student ****************************/
+            /**************************** Route User ****************************/
         });
+        //////////// Routs For Surveyor ////////////
 
+        //////////// Routs For Surveyor ////////////
+        Route::group(['middleware' => ['role:Surveyor']], function() {
+            /**************************** Route Surveyor ****************************/
+            Route::get('surveyor',       'Dashboard\SurveyorDashboardController@index')->name('surveyor');
+            /**************************** Route Surveyor ****************************/
+        });
+        //////////// Routs For Surveyor ////////////
+
+        //////////// Routs For Supervisor ////////////
+        Route::group(['middleware' => ['role:Supervisor']], function() {
+            /**************************** Route Supervisor ****************************/
+            Route::get('supervisor',       'Dashboard\SupervisorDashboardController@index')->name('supervisor');
+            /**************************** Route Supervisor ****************************/
+        });
+        //////////// Routs For Supervisor ////////////
+
+        //////////// Routs For Manager ////////////
         Route::group(['middleware' => ['role:Manager']], function() {
             /**************************** Route Manager ****************************/
             Route::get('manager',       'Dashboard\ManagerDashboardController@index')->name('manager');
             /**************************** Route Manager ****************************/
         });
+        //////////// Routs For Manager ////////////
 
+
+        //////////// Routs For Admin ////////////
         Route::group(['middleware' => ['role:Admin']], function() {
             /**************************** Route Admin ****************************/
-            Route::get('dashboard',    'Dashboard\AdminDashboardController@index')->name('dashboard');
+            Route::get('dashboard',       'Dashboard\AdminDashboardController@index')->name('dashboard');
+            /**************************** Route Admin ****************************/
+        });
+        ////////// Routs For Admin ////////////
+
+        //////////// Routs For SuperAdmin ////////////
+        Route::group(['middleware' => ['role:SuperAdmin']], function() {
+            /**************************** Route Admin ****************************/
+            Route::get('administrator',    'Dashboard\AdministratorDashboardController@index')->name('administrator');
             /**************************** Route Admin ****************************/
             /**************************** Route Users ****************************/
             Route::resource('users','User\UserController');
@@ -119,6 +149,7 @@ Route::group(['middleware' => ['auth']], function() {
             /**************************** Route Currency ****************************/
 
         });
+        //////////// Routs For SuperAdmin ////////////
 
     });
 });
