@@ -1,0 +1,46 @@
+<?php
+
+namespace App\Contracts;
+
+interface {{modelName}}
+{
+    // /**
+    //  * Determine if the user has verified their email address.
+    //  *
+    //  * @return bool
+    //  */
+    // public function has{{modelName}}()
+    // {
+
+    // }
+
+    // /**
+    //  * Mark the given user's email as verified.
+    //  *
+    //  * @return bool
+    //  */
+    // public function mark{{modelName}}AsVerified()
+    // {
+
+    // }
+
+    // /**
+    //  * Send the email verification notification.
+    //  *
+    //  * @return void
+    //  */
+    // public function send{{modelName}}Notification()
+    // {
+
+    // }
+
+    // /**
+    //  * Get the email address that should be used for verification.
+    //  *
+    //  * @return string
+    //  */
+    // public function getEmailForVerification()
+    // {
+
+    // }
+}
