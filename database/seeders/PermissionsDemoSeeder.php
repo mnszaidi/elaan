@@ -31,16 +31,16 @@ class PermissionsDemoSeeder extends Seeder {
 
         // create roles and assign existing permissions SuperAdmin
         $role1 = Role::create(['name' => 'SuperAdmin']);
-        $role1->givePermissionTo('Admin_list');
-        $role1->givePermissionTo('Admin_create');
-        $role1->givePermissionTo('Admin_edit');
-        $role1->givePermissionTo('Admin_upload');
-        $role1->givePermissionTo('Admin_download');
-        $role1->givePermissionTo('Admin_export');
-        $role1->givePermissionTo('Admin_show_deleted');
-        $role1->givePermissionTo('Admin_restore');
-        $role1->givePermissionTo('Admin_delete');
-        $role1->givePermissionTo('Admin_perm_delete');
+        $role1->givePermissionTo('SuperAdmin_list');
+        $role1->givePermissionTo('SuperAdmin_create');
+        $role1->givePermissionTo('SuperAdmin_edit');
+        $role1->givePermissionTo('SuperAdmin_upload');
+        $role1->givePermissionTo('SuperAdmin_download');
+        $role1->givePermissionTo('SuperAdmin_export');
+        $role1->givePermissionTo('SuperAdmin_show_deleted');
+        $role1->givePermissionTo('SuperAdmin_restore');
+        $role1->givePermissionTo('SuperAdmin_delete');
+        $role1->givePermissionTo('SuperAdmin_perm_delete');
 
         // create Admin permissions
         Permission::create(['name' => 'Admin_list']);
