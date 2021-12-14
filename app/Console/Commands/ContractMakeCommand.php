@@ -39,8 +39,7 @@ class ContractMakeCommand extends Command
     {
         $name = $this->argument('name');
         $this->contract($name);
-
-        return Command::SUCCESS;
+        $this->info('Contract Created successfully!');
     }
 
     /**

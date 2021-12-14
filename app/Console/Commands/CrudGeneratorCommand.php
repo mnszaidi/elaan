@@ -72,6 +72,8 @@ class CrudGeneratorCommand extends Command
         file_put_contents("routes/monis.php", "Route::post('/{$small}_check','$dir"."\\{$dir}Controller@check_{$small}')->name('check.{$small}');" . "\n", FILE_APPEND);
         file_put_contents("routes/monis.php", "Route::post('/{$small}_get','$dir"."\\{$dir}Controller@get_{$small}')->name('get.{$small}');" . "\n", FILE_APPEND);
         file_put_contents("routes/monis.php", "/**************************** Route $dir ****************************/" . "\n", FILE_APPEND);
+
+        $this->info('Crud Created successfully!');
     }
 
     /**

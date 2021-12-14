@@ -30,7 +30,7 @@ class TraitMakeCommand extends Command
         $name = $this->argument('name');
         $this->trait($name);
 
-        return Command::SUCCESS;
+        $this->info('Trait Created successfully!');
     }
     /**
      * The type of class being generated.
@@ -47,7 +47,7 @@ class TraitMakeCommand extends Command
     protected function getStub()
     {
         //return __DIR__ . '/stubs/trait.stub';
-        return file_get_contents(resource_path("stubs/crud/Trait.stub"));
+        return file_get_contents(resource_path("stubs/crud/trait.stub"));
     }
 
 
